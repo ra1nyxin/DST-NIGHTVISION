@@ -1,6 +1,3 @@
-# NightVision
-
-## 简介
 **NightVision** 是一个《饥荒：联机版》（Don't Starve Together）的**客户端模组**（`client_only_mod = true`）。它让你在任意时刻通过一个热键切换“夜视”视觉效果，方便在黑暗中观察环境。它**只改变画面亮度/颜色**，**不提供任何黑暗保护**（仍然会受到查理的攻击、仍会损失理智）。
 
 ## 功能概览
@@ -116,9 +113,6 @@ end)
 
 ---
 
-# NightVision
-
-## Introduction
 **NightVision** is a **client-side mod** (`client_only_mod = true`) for *Don't Starve Together*. It lets you toggle a "night vision" visual effect at any time via a hotkey, making it easier to observe your surroundings in the dark. It **only changes screen brightness/color** and provides **no protection from darkness** (you can still be attacked by Charlie and still lose sanity).
 
 ## Features
