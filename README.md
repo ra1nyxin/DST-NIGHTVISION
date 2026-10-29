@@ -1,13 +1,15 @@
+### 简介
+
 **NightVision** 是一个《饥荒：联机版》（Don't Starve Together）的**客户端模组**（`client_only_mod = true`）。它让你在任意时刻通过一个热键切换“夜视”视觉效果，方便在黑暗中观察环境。它**只改变画面亮度/颜色**，**不提供任何黑暗保护**（仍然会受到查理的攻击、仍会损失理智）。
 
-## 功能概览
+### 功能概览
 - **一键夜视**：按下可配置的热键（默认 `N`），立即在客户端开启/关闭夜视效果。
 - **黑暗警报**：开启夜视且处于黑暗中时，在角色身上周期性显示一个红色缩放的圆圈提示，提醒你“黑暗正在攻击你”。
 - **纯客户端**：服务器无需安装该模组；每个玩家可独立使用。
 
 ---
 
-## 文件结构
+### 文件结构
 
 ```
 NightVision/
@@ -17,7 +19,7 @@ NightVision/
 
 > `Assets` 里引用的 `anim/winona_battery_placement.zip` 是**游戏本体**资源（薇诺娜发电机放置动画），并非模组自带文件，无需放到模组目录里。
 
-## 安装与使用
+### 安装与使用
 1. 将 `NightVision` 文件夹放入：`Don't Starve Together/mods/NightVision/`
 2. 启动游戏，在“模组”界面启用该模组。
 3. 进入世界后，按热键（默认 `N`）切换夜视。
@@ -30,7 +32,7 @@ NightVision/
 
 ---
 
-## 技术原理：夜视效果是如何实现的
+### 技术原理：夜视效果是如何实现的
 
 ### 1. 客户端夜视字段 `forcenightvision`
 在 DST 的客户端组件 `playervision` 中有一个布尔字段 `forcenightvision`。当它为 `true` 时，`playervision:HasNightVision()` 会返回 `true`，客户端渲染就会应用“夜视”的画面效果（更亮的画面 + 夜视滤镜色调），并且不会叠加黑暗遮罩。
@@ -113,16 +115,18 @@ end)
 
 ---
 
+### Introduction
+
 **NightVision** is a **client-side mod** (`client_only_mod = true`) for *Don't Starve Together*. It lets you toggle a "night vision" visual effect at any time via a hotkey, making it easier to observe your surroundings in the dark. It **only changes screen brightness/color** and provides **no protection from darkness** (you can still be attacked by Charlie and still lose sanity).
 
-## Features
+### Features
 - **One-key night vision**: Press the configurable hotkey (default `N`) to toggle night vision on/off on the client.
 - **Darkness alert**: While night vision is on and you are in darkness, a red pulsing circle is periodically displayed on your character to warn you that darkness is attacking.
 - **Client-only**: The server does not need this mod; each player can use it independently.
 
 ---
 
-## File Structure
+### File Structure
 
 ```
 NightVision/
@@ -132,7 +136,7 @@ NightVision/
 
 > The `anim/winona_battery_placement.zip` referenced in `Assets` is a **game-native** resource (Winona battery placement animation), not a mod file. It does not need to be placed in the mod folder.
 
-## Installation & Usage
+### Installation & Usage
 1. Place the `NightVision` folder into: `Don't Starve Together/mods/NightVision/`
 2. Launch the game and enable the mod from the Mods screen.
 3. In-game, press the hotkey (default `N`) to toggle night vision.
@@ -145,7 +149,7 @@ NightVision/
 
 ---
 
-## Technical Details: How the Night Vision Effect Works
+### Technical Details: How the Night Vision Effect Works
 
 ### 1. The client-side `forcenightvision` field
 The client component `playervision` has a boolean field `forcenightvision`. When set to `true`, `playervision:HasNightVision()` returns `true`, and the client renderer applies the "night vision" screen effect (brighter screen + night-vision color tint) and does not apply the darkness overlay.
